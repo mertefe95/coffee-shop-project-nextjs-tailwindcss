@@ -1,24 +1,25 @@
 import Link from "next/link";
 import Head from 'next/head';
-
+import Zoom from 'react-reveal/Zoom'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Nav = () => (
-    <div>
+    <div> 
+    
     <Head>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/80bd54fff9.js" crossorigin="anonymous"></script>
-    <script>
-    AOS.init();
-    </script>
+    <script src="https://kit.fontawesome.com/80bd54fff9.js" crossOrigin="anonymous"></script>
     <title>testing1-2-3</title>
     </Head>
     
     <div className="header h-40 bg-black flex justify-between align-center">
-
-    <div data-aos="zoom-in" className="logo">
+    <Zoom>
+    <div className="logo">
+    
     <img className="h-40 px-20" src="/real-white-logo.png"></img>
+    
     </div>
+    </Zoom>
+
 
     <div className="navbar flex text-sm text-white">
 
@@ -32,10 +33,10 @@ const Nav = () => (
     </div>
 
     <div className="icons">
-    <ul className="icons-ul flex py-16 pr-10">
-    <li className="px-4"><a><i class="fab fa-facebook-f"></i></a></li>
-    <li className="px-4"><a>Yelp</a></li>
-    <li className="px-4"><a>Face</a></li>
+    <ul className="icons-ul flex py-16 pr-16 text-xl leading-3">
+    <li className="px-4"><a><FontAwesomeIcon icon={['fab', 'instagram']}/></a></li>
+    <li className="px-4"><a><FontAwesomeIcon icon={['fab', 'yelp']}/></a></li>
+    <li className="px-4"><a><FontAwesomeIcon icon={['fab', 'facebook-f']}/></a></li>
     </ul>
 
     </div>
@@ -49,9 +50,14 @@ const Nav = () => (
         <div className="slider">
 
         </div>
+
+        
         <div className="menu-container flex justify-center">
+        <Zoom>
         <img className="menu h-screen" src="/new-menu.jpg"></img>
+        </Zoom>
         </div>
+        
 
         <div className="order-ahead-container h-64 w-screen text-white">
         <div className="order-ahead-content">

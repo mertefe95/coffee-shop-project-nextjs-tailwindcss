@@ -8,9 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.31",
+    "@fortawesome/free-brands-svg-icons": "^5.15.0",
+    "@fortawesome/free-regular-svg-icons": "^5.15.0",
+    "@fortawesome/free-solid-svg-icons": "^5.15.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "aos": "^2.3.4",
     "next": "9.5.3",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-reveal": "^1.2.2"
   },
   "devDependencies": {
     "postcss-preset-env": "^6.7.0",
