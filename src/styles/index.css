@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.slider {
+    height: 75vh;
+    background: url('../bopomofo-background-images/1-background.jpg') no-repeat center center/cover;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide{
+    25%{
+        background: url('../bopomofo-background-images/2-background.jpg') no-repeat center center/cover;
+    }
+    25%{
+        background: url('../bopomofo-background-images/3-background.jpg') no-repeat center center/cover;
+    }
+    25%{
+        background: url('../bopomofo-background-images/4-background.JPG') no-repeat center center/cover;
+    }
+    25%{
+        background: url('../bopomofo-background-images/4-background.JPG') no-repeat center center/cover;
+    }
+}
+
+.navbar {
+    font-family: "Inter";
+}
+
+@font-face {
+    font-family: 'DIN 2014';
+    src: url("../DIN2014-Regular.woff");
+    src: local('DIN 2014 Regular'), local('DIN2014-Regular'),
+        url("../DIN2014-Regular.woff") format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: "Inter";
+    src: url("../Inter.ttf") format("truetype");
+}
+
+.order-ahead-container {
+    background-image: url("/public/tigerz.png") no-repeat center center/cover;
+}
+.order-ahead-content-ul:first-child {
+    font-family: "Inter";
+}
+
+.three-images-container {
+    font-family: 'DIN 2014';
+}
+
+.insta-button {
+    color: #e26650;
+    border-color: #e26650;
+}
+
+.insta-button:hover {
+    color: #fff;
+    background-color: #e26650;
+}
+
+.story-container {
+    font-family: 'DIN 2014';
+}
+
+.story-container .insta-button {
+    color: #e26650;
+    border-color: #e26650;
+}
+
+.story-container .insta-button:hover {
+    background-color: #e26650;
+    color: #fff;
+}
+
+.tiger-image-container {
+    background-image: url(/public/tigerz.png) no-repeat center center/cover;
+}
