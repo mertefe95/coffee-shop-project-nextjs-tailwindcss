@@ -59,11 +59,11 @@ const Nav = () => (
         </div>
         
 
-        <div className="order-ahead-container h-64 w-screen text-white">
+        <div className="order-ahead-container flex w-screen text-white justify-start items-center pl-64">
         <div className="order-ahead-content">
-        <ul className="order-ahead-content-ul flex">
-            <li className="uppercase ">ORDER AHEAD</li>
-            <li><button className="px-4 py-4 border-2">Now Available</button></li>
+        <ul className="order-ahead-content-ul">
+            <li className="uppercase pb-6 text-5xl tracking-widest font-semibold">ORDER AHEAD</li>
+            <li><button className="px-6 py-3 border-2">Now Available</button></li>
         </ul>
         </div>
         </div>

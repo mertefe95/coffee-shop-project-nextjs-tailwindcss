@@ -51,10 +51,16 @@
 }
 
 .order-ahead-container {
-    background-image: url("../../public/below-image.png") no-repeat center center/cover;
+    background: url("../../public/below-image.png") no-repeat center center/cover;
+    height: 80vh;
+    min-height: 80vh;
 }
 .order-ahead-content-ul:first-child {
     font-family: "Inter";
+}
+
+.order-ahead-content-ul, button {
+    font-family: 'DIN 2014';
 }
 
 .three-images-container {
