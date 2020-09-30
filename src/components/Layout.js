@@ -3,7 +3,7 @@ import Head from 'next/Head';
 import Zoom from 'react-reveal/Zoom'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function Layout({ title, children }) {
+export default function Layout({ children }) {
   return (
     <div>
         <Head>
